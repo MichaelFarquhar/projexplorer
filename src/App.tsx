@@ -3,7 +3,7 @@ import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
 import { Button } from "react-aria-components";
-import { TopToolbar } from "./layouts/Toolbar/TopToolbar";
+import { MainToolbar } from "./layouts/toolbars/MainToolbar/MainToolbar";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <main>
-      <TopToolbar />
+      <MainToolbar />
       <h1>Welcome to Tauri + React</h1>
 
       <div className="row">

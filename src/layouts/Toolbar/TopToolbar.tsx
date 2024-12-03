@@ -1,21 +1,24 @@
 import { Group, Toolbar } from "react-aria-components";
 import { TopToolbarIconButton } from "./TopToolbarIconButton";
 import { TopToolbarBreadcrumbs } from "./TopToolbarBreadcrumbs";
+import { useTranslation } from "react-i18next";
 
 export const TopToolbar = () => {
+  const { t } = useTranslation();
+
   return (
     <Toolbar
-      aria-label="Top toolbar"
+      aria-label={t("Top toolbar")}
       className="w-full flex justify-between items-center py-3 px-6 mb-12 drop-shadow-md bg-slate-200 dark:bg-slate-800"
     >
-      <Group aria-label="Breadcrumbs">
+      <Group aria-label={t("Breadcrumbs")}>
         <TopToolbarBreadcrumbs />
       </Group>
       <Group
         aria-label="Action buttons"
         className="flex items-center space-x-2"
       >
-        <TopToolbarIconButton label="Refresh Sync">
+        <TopToolbarIconButton label={t("Refresh Sync")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -31,7 +34,7 @@ export const TopToolbar = () => {
             />
           </svg>
         </TopToolbarIconButton>
-        <TopToolbarIconButton label="Settings">
+        <TopToolbarIconButton label={t("Settings")}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"

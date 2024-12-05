@@ -1,9 +1,8 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
 import { invoke } from "@tauri-apps/api/core";
 import "./App.css";
-import { Button } from "react-aria-components";
 import { MainToolbar } from "./layouts/toolbars/MainToolbar/MainToolbar";
+import { DirectorySelector } from "./components/DirectorySelector";
 
 function App() {
   const [greetMsg, setGreetMsg] = useState("");
@@ -15,38 +14,11 @@ function App() {
   }
 
   return (
-    <main>
+    <main className="bg-gray-100 dark:bg-gray-900">
       <MainToolbar />
-      <h1>Welcome to Tauri + React</h1>
-
-      <div className="row">
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo vite" alt="Vite logo" />
-        </a>
-        <a href="https://tauri.app" target="_blank">
-          <img src="/tauri.svg" className="logo tauri" alt="Tauri logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="w-full h-full grid place-items-center pt-12">
+        <DirectorySelector />
       </div>
-      <p>Click on the Tauri, Vite, and React logos to learn more.</p>
-
-      <form
-        className="row"
-        onSubmit={(e) => {
-          e.preventDefault();
-          greet();
-        }}
-      >
-        <input
-          id="greet-input"
-          onChange={(e) => setName(e.currentTarget.value)}
-          placeholder="Enter a name..."
-        />
-        <Button type="submit">Greet</Button>
-      </form>
-      <p>{greetMsg}</p>
     </main>
   );
 }

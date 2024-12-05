@@ -12,7 +12,7 @@ export const ToolbarIconButton = ({ label, icon }: Props) => {
 
   return (
     <TooltipTrigger delay={0} closeDelay={0}>
-      <Button className="p-2.5 bg-transparent border-none shadow-none transition hover:bg-slate-300 dark:hover:bg-slate-700 rounded-md cursor-pointer">
+      <Button className="p-2.5 text-white bg-transparent border-none shadow-none transition hover:bg-slate-300 dark:hover:bg-slate-700 rounded-md cursor-pointer">
         {icon()}
       </Button>
       {label && (

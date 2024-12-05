@@ -11,7 +11,7 @@ export const Toolbar = ({ children }: Props) => {
   return (
     <AriaToolbar
       aria-label={t("Top toolbar")}
-      className="w-full flex justify-between items-center py-3 px-6 mb-12 drop-shadow-md bg-slate-200 dark:bg-slate-800"
+      className="w-full flex justify-between items-center py-3 px-6 drop-shadow-md bg-gray-250 dark:bg-gray-950"
     >
       {children}
     </AriaToolbar>

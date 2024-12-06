@@ -1,11 +1,13 @@
 import { Toolbar as AriaToolbar } from "react-aria-components";
 import { useTranslation } from "react-i18next";
 
+export type ToolbarComponent = React.ComponentType<Props>;
+
 interface Props {
   children: React.ReactNode;
 }
 
-export const Toolbar = ({ children }: Props) => {
+export const Toolbar: ToolbarComponent = ({ children }: Props) => {
   const { t } = useTranslation();
 
   return (

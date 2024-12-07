@@ -13,7 +13,7 @@ function App() {
   // ...
 
   return (
-    <div className="bg-gray-100 dark:bg-gray-900">
+    <div className="bg-base dark:bg-base-dark">
       <PageRoute route="/" toolbar={<MainToolbar />} page={<Dashboard />} />
       <PageRoute
         route="/settings/*"

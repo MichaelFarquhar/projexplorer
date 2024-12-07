@@ -15,27 +15,23 @@ export const SettingsSideNav = forwardRef<HTMLDivElement, SettingsSideNavProps>(
   (_, ref) => {
     return (
       <aside
-        className="w-fit h-full py-5 px-5 fixed left-0 bg-gray-800 flex flex-col space-y-2"
+        className="w-fit h-full py-5 px-5 fixed left-0 bg-surface dark:bg-surface-dark flex flex-col space-y-2"
         ref={ref}
       >
-        <SettingsSideNavItem
-          label="General"
-          icon={<CogIcon className="size-5" />}
-          route="/"
-        />
+        <SettingsSideNavItem label="General" icon={CogIcon} route="/" />
         <SettingsSideNavItem
           label="Appearance"
-          icon={<PaintBrushIcon className="size-5" />}
+          icon={PaintBrushIcon}
           route="/appearance"
         />
         <SettingsSideNavItem
           label="System"
-          icon={<ServerStackIcon className="size-5" />}
+          icon={ServerStackIcon}
           route="/system"
         />
         <SettingsSideNavItem
           label="About"
-          icon={<QuestionMarkCircleIcon className="size-5" />}
+          icon={QuestionMarkCircleIcon}
           route="/about"
         />
       </aside>

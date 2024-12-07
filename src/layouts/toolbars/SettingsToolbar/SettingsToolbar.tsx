@@ -3,6 +3,7 @@ import { Toolbar } from "../Toolbar";
 import { Group } from "react-aria-components";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { ToolbarIconButton } from "../ToolbarIconButton";
+import { Link } from "wouter";
 
 export const SettingsToolbar = () => {
   const { t } = useTranslation();
@@ -13,7 +14,11 @@ export const SettingsToolbar = () => {
         aria-label={t("Breadcrumbs")}
         className="flex items-center space-x-4"
       >
-        <ToolbarIconButton icon={() => <ArrowLeftIcon className="size-6" />} />
+        <Link to="/" asChild>
+          <ToolbarIconButton
+            icon={() => <ArrowLeftIcon className="size-6" />}
+          />
+        </Link>
         <div className="text-xl font-medium">Settings</div>
       </Group>
       <Group aria-label="Links" className="flex items-center space-x-2">

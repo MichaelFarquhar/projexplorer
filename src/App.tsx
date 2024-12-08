@@ -8,16 +8,20 @@ import { Settings } from "./pages/settings/Settings.js";
 import { SettingsToolbar } from "./layouts/toolbars/SettingsToolbar/SettingsToolbar.js";
 import { useEffect } from "react";
 import { scanDirectory } from "./scanDirectory.js";
+import { useAtom } from "jotai/react";
+import { directoriesAtom } from "./atoms/directoriesAtom.js";
 
 function App() {
+  const [_, setDirectories] = useAtom(directoriesAtom);
+
   useEffect(() => {
     const getDir = async () => {
-      const entries = await scanDirectory("C:\\Users\\farks\\OneDrive\\Documents");
-      console.log(entries);
+      const directories = await scanDirectory("C:\\Users\\farks\\OneDrive\\Documents");
+      setDirectories(directories);
     };
 
     getDir();
-  });
+  }, []);
   //TODO: If settings set to return to page you left off after closing app
   // Load here with useEffect based on route className
   // ...

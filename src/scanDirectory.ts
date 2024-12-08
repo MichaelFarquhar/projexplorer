@@ -3,14 +3,7 @@ Designed to currently work for a single directory containing all project folders
 */
 
 import { FileInfo, readDir, size, stat } from "@tauri-apps/plugin-fs";
-
-interface Directory {
-  name: string;
-  path: string;
-  size: number;
-  dateCreated: string;
-  dateModified: string;
-}
+import { Directory } from "./atoms/directoriesAtom";
 
 const getFileCreationDate = (dirInfo: FileInfo): string => {
   if (dirInfo.birthtime !== null) return dirInfo.birthtime.toString();

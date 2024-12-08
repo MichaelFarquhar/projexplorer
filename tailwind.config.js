@@ -13,8 +13,8 @@ export default {
           dark: "#0e0f0d",
         },
         card: {
-          DEFAULT: "#E6DFE0",
-          dark: "#3d4648",
+          DEFAULT: "#F5F5F5",
+          dark: "#181818",
         },
         accent: {
           DEFAULT: "#67A6F5",

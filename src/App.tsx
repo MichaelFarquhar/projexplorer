@@ -3,7 +3,7 @@ import { MainToolbar } from "./layouts/toolbars/MainToolbar/MainToolbar";
 import { PageRoute } from "./components/PageRoute";
 import { Dashboard } from "./pages/dashboard/Dashboard";
 
-// import "./i18n.js";
+import "./i18n.js";
 import { Settings } from "./pages/settings/Settings.js";
 import { SettingsToolbar } from "./layouts/toolbars/SettingsToolbar/SettingsToolbar.js";
 import { useEffect } from "react";

@@ -10,14 +10,9 @@ export const SettingsToolbar = () => {
 
   return (
     <Toolbar>
-      <Group
-        aria-label={t("Breadcrumbs")}
-        className="flex items-center space-x-4"
-      >
+      <Group aria-label={t("Breadcrumbs")} className="flex items-center space-x-4">
         <Link to="/" asChild>
-          <ToolbarIconButton
-            icon={() => <ArrowLeftIcon className="size-6" />}
-          />
+          <ToolbarIconButton icon={() => <ArrowLeftIcon className="size-6" />} />
         </Link>
         <div className="text-xl font-medium">Settings</div>
       </Group>

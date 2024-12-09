@@ -14,10 +14,7 @@ export const MainToolbar = () => {
       <Group aria-label={t("Breadcrumbs")}>
         <MainToolbarBreadcrumbs />
       </Group>
-      <Group
-        aria-label="Action buttons"
-        className="flex items-center space-x-2"
-      >
+      <Group aria-label="Action buttons" className="flex items-center space-x-2">
         <ToolbarIconButton
           label={t("Refresh Sync")}
           icon={() => <ArrowPathIcon className="size-6" />}

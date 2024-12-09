@@ -1,5 +1,5 @@
 import { Route } from "wouter";
-import { ToolbarComponent } from "../layouts/toolbars/Toolbar";
+import { ToolbarComponent } from "./toolbars/Toolbar";
 import { PageComponent } from "../pages/Page";
 
 interface Props {

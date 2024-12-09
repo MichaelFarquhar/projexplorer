@@ -1,12 +1,12 @@
-import "./App.css";
-import { MainToolbar } from "./layouts/toolbars/MainToolbar/MainToolbar";
+import "./styles/global.css";
+import "./i18n.js";
+
+import { useEffect } from "react";
+import { MainToolbar } from "./components/toolbars/MainToolbar/MainToolbar.js";
 import { PageRoute } from "./components/PageRoute";
 import { Dashboard } from "./pages/dashboard/Dashboard";
-
-import "./i18n.js";
 import { Settings } from "./pages/settings/Settings.js";
-import { SettingsToolbar } from "./layouts/toolbars/SettingsToolbar/SettingsToolbar.js";
-import { useEffect } from "react";
+import { SettingsToolbar } from "./components/toolbars/SettingsToolbar/SettingsToolbar.js";
 import { scanDirectory } from "./scanDirectory.js";
 import { useAtom } from "jotai/react";
 import { directoriesAtom } from "./atoms/directoriesAtom.js";

@@ -5,6 +5,7 @@ import { Cog6ToothIcon } from "@heroicons/react/24/outline";
 import { Toolbar } from "../Toolbar";
 import { Group } from "react-aria-components";
 import { ToolbarIconButton } from "../ToolbarIconButton";
+import { Link } from "wouter";
 
 export const MainToolbar = () => {
   const { t } = useTranslation();
@@ -19,10 +20,12 @@ export const MainToolbar = () => {
           label={t("Refresh Sync")}
           icon={() => <ArrowPathIcon className="size-6" />}
         />
-        <ToolbarIconButton
-          label={t("Settings")}
-          icon={() => <Cog6ToothIcon className="size-6" />}
-        />
+        <Link to="/settings">
+          <ToolbarIconButton
+            label={t("Settings")}
+            icon={() => <Cog6ToothIcon className="size-6" />}
+          />
+        </Link>
       </Group>
     </Toolbar>
   );

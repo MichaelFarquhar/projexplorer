@@ -6,12 +6,12 @@ export const SettingsPageGeneral = () => {
   const [switchInput, setSwitchInput] = useState(false);
 
   return (
-    <SettingsPage title="General">
+    <SettingsPage title="page.title.general">
       <SwitchInput
         defaultValue={switchInput}
         value={switchInput}
         name="theme"
-        label="Use Dark Mode"
+        label="config.label.darkmode"
         onChange={(e: boolean) => setSwitchInput(e)}
       />
     </SettingsPage>

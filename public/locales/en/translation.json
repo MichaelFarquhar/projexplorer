@@ -1,0 +1,27 @@
+{
+  "aria": {
+    "toolbar": "Top toolbar",
+    "breadcrumbs": "Breadcrumbs",
+    "actions": "Action buttons"
+  },
+  "tooltip": {
+    "refresh": "Refresh Sync",
+    "settings": "Settings",
+    "github": "Github"
+  },
+  "page": {
+    "title": {
+      "dashboard": "Dashboard",
+      "settings": "Settings",
+      "general": "General",
+      "appearance": "Appearance",
+      "system": "System",
+      "about": "About"
+    }
+  },
+  "config": {
+    "label": {
+      "darkmode": "Use Dark Mode"
+    }
+  }
+}

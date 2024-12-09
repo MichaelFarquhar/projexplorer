@@ -18,19 +18,19 @@ export const SettingsSideNav = forwardRef<HTMLDivElement, SettingsSideNavProps>(
         className="w-fit h-full py-5 px-5 fixed left-0 bg-surface dark:bg-surface-dark flex flex-col space-y-2"
         ref={ref}
       >
-        <SettingsSideNavItem label="General" icon={CogIcon} route="/" />
+        <SettingsSideNavItem label="page.title.general" icon={CogIcon} route="/" />
         <SettingsSideNavItem
-          label="Appearance"
+          label="page.title.appearance"
           icon={PaintBrushIcon}
           route="/appearance"
         />
         <SettingsSideNavItem
-          label="System"
+          label="page.title.system"
           icon={ServerStackIcon}
           route="/system"
         />
         <SettingsSideNavItem
-          label="About"
+          label="page.title.about"
           icon={QuestionMarkCircleIcon}
           route="/about"
         />

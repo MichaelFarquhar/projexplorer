@@ -1,4 +1,3 @@
-import { useTranslation } from "react-i18next";
 import { Toolbar } from "../Toolbar";
 import { Group } from "react-aria-components";
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
@@ -6,11 +5,9 @@ import { ToolbarIconButton } from "../ToolbarIconButton";
 import { Link } from "wouter";
 
 export const SettingsToolbar = () => {
-  const { t } = useTranslation();
-
   return (
     <Toolbar>
-      <Group aria-label={t("Breadcrumbs")} className="flex items-center space-x-4">
+      <Group className="flex items-center space-x-4">
         <Link to="/" asChild>
           <ToolbarIconButton icon={() => <ArrowLeftIcon className="size-6" />} />
         </Link>
@@ -18,7 +15,7 @@ export const SettingsToolbar = () => {
       </Group>
       <Group aria-label="Links" className="flex items-center space-x-2">
         <ToolbarIconButton
-          label="Github"
+          label={"tooltip.github"}
           icon={() => (
             <svg
               role="img"

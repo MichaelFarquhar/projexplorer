@@ -4,6 +4,8 @@ import { SettingsSideNav } from "./SettingsSideNav/SettingsSideNav";
 import { SettingsPageGeneral } from "./pages/SettingsPageGeneral";
 import { SettingsPageAppearance } from "./pages/SettingsPageAppearance";
 import { useEffect, useRef, useState } from "react";
+import { SettingsPageSystem } from "./pages/SettingsPageSystem";
+import { SettingsPageAbout } from "./pages/SettingsPageAbout";
 
 export const Settings = () => {
   const [sideNavWidth, setSideNavWidth] = useState(0);
@@ -36,6 +38,8 @@ export const Settings = () => {
             <Switch>
               <Route path={"/"} component={SettingsPageGeneral} />
               <Route path={"/appearance"} component={SettingsPageAppearance} />
+              <Route path={"/system"} component={SettingsPageSystem} />
+              <Route path={"/about"} component={SettingsPageAbout} />
             </Switch>
           </Router>
         </div>

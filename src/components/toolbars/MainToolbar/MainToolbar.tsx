@@ -12,17 +12,17 @@ export const MainToolbar = () => {
 
   return (
     <Toolbar>
-      <Group aria-label={t("Breadcrumbs")}>
+      <Group aria-label={t("aria.breadcrumbs")}>
         <MainToolbarBreadcrumbs />
       </Group>
-      <Group aria-label="Action buttons" className="flex items-center space-x-2">
+      <Group aria-label={t("aria.actions")} className="flex items-center space-x-2">
         <ToolbarIconButton
-          label={t("Refresh Sync")}
+          label={t("tooltip.refresh")}
           icon={() => <ArrowPathIcon className="size-6" />}
         />
         <Link to="/settings">
           <ToolbarIconButton
-            label={t("Settings")}
+            label={t("tooltip.settings")}
             icon={() => <Cog6ToothIcon className="size-6" />}
           />
         </Link>

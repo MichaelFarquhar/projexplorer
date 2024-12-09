@@ -1,8 +1,8 @@
 import { SettingsPage } from "../SettingsPage";
 
-export const SettingsPageAppearance = () => {
+export const SettingsPageAbout = () => {
   return (
-    <SettingsPage title="page.title.appearance">
+    <SettingsPage title="page.title.about">
       <div>Hey There</div>
     </SettingsPage>
   );

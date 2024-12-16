@@ -1,18 +1,24 @@
 import { Button, Tooltip, TooltipTrigger } from "react-aria-components";
 import { useTranslation } from "react-i18next";
+import { useLocation } from "wouter";
 
 interface Props {
   label?: string;
   icon: () => React.ReactNode;
+  linkTo?: string;
   onPress?: () => void;
 }
 
-export const ToolbarIconButton = ({ label, icon }: Props) => {
+export const ToolbarIconButton = ({ label, icon, linkTo, onPress }: Props) => {
   const { t } = useTranslation();
+  const [_, navigate] = useLocation();
 
   return (
     <TooltipTrigger delay={0} closeDelay={0}>
-      <Button className="p-2.5 text-white bg-transparent border-none shadow-none transition hover:bg-slate-300 dark:hover:bg-slate-700 rounded-md cursor-pointer">
+      <Button
+        className="p-2.5 text-white bg-transparent border-none shadow-none transition hover:bg-slate-300 dark:hover:bg-slate-700 rounded-md cursor-pointer"
+        onPressStart={() => (linkTo ? navigate(linkTo) : onPress ?? undefined)}
+      >
         {icon()}
       </Button>
       {label && (

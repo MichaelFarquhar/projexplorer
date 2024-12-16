@@ -33,7 +33,6 @@ export const SwitchInput = ({
       isSelected={value}
       isDisabled={disabled}
       isReadOnly={readOnly}
-      aria-label={t(label)}
       onChange={onChange}
     >
       <div className="indicator" />

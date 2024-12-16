@@ -13,9 +13,7 @@ export const DashboardBadge = ({ text, icon: Icon }: Props) => {
       isDisabled
     >
       <Icon className="size-4 mr-1.5" />
-      <span className="hover:cursor-default" aria-label="Hey">
-        {text}
-      </span>
+      <span className="hover:cursor-default">{text}</span>
     </Tag>
   );
 };

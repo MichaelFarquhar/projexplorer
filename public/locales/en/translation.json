@@ -1,9 +1,4 @@
 {
-  "aria": {
-    "toolbar": "Top toolbar",
-    "breadcrumbs": "Breadcrumbs",
-    "actions": "Action buttons"
-  },
   "tooltip": {
     "refresh": "Refresh Sync",
     "settings": "Settings",

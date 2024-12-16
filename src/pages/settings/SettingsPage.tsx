@@ -11,9 +11,9 @@ export const SettingsPage = ({ title, children }: Props) => {
 
   return (
     <section className="py-6 px-12 flex flex-col overflow-y-auto">
-      <h1 className="text-3xl font-semibold text-black dark:text-white mb-8">
+      <h2 className="text-3xl font-semibold text-black dark:text-white mb-8">
         {t(title)}
-      </h1>
+      </h2>
       {children}
     </section>
   );
